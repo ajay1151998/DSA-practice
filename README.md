@@ -4,13 +4,16 @@
 
 #### solution 
 
+
 public class Solution {
+
     static void Swap(int[] arr,int i,int j){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
- static int minimumSwaps(int[] arr) {
+
+static int minimumSwaps(int[] arr) {
 
         int count=0;
         int n=arr.length;
