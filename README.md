@@ -28,3 +28,27 @@ static int minimumSwaps(int[] arr) {
         return count;
     }
 }
+
+
+#Exercise 1: Create a method to find the sum of the cubes of the digits of an n digit number
+
+import java.util.*;
+
+class GFG {
+     public static int findCube(int n){
+         int temp=n;
+         int sum=0;
+         while(temp>0){
+             int k=temp%10;
+             sum+=Math.pow(k,3);
+             temp=temp/10;
+         }
+         return sum;
+         
+     }
+	public static void main (String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		System.out.println(findCube(n));
+	}
+}
